@@ -1,0 +1,11 @@
+
+list1 = range(2, 20, 2)
+list1_len = len(list1)
+print(f"Длина list1: {list1_len}")
+print(f"Элементы list1: {list(list1)}")
+list1 = range(2, 20, 3)
+list1_len = len(list1)
+print(f"\nПосле изменения шага на 3:")
+print(f"Длина list1: {list1_len}")
+print(f"Элементы list1: {list(list1)}")
+print(f"\nИзменение длины: было 9 элементов (2,4,6,8,10,12,14,16,18), стало {list1_len} элемента")
