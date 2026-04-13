@@ -1,4 +1,4 @@
-
+#функцию main() добавить
 logs = [
     "2025-02-01 10:15:33|INFO|user=anna action=login status=success ip=10.0.0.1",
     "2025-02-01 10:17:10|ERROR|user=bob action=payment status=fail amount=120",
@@ -15,7 +15,7 @@ def parse_line(line):
     data = {}
     for f in fields:
         if "=" in f:
-            key, value = f.split("=")
+            key, value = f.split("=") #проверить бы валидность
             if value.isdigit():
                 value = int(value)
             data[key] = value
